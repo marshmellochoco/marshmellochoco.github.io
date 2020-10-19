@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #0a0c36;
+    --secondary-color: #9496c5;
+    --thirtiary-color: #db97ea;
+    --contrast-color: #d7d8f4;
+}
+
+.home {
+    margin: auto;
+    width: 100%;
+    padding: 15% 0;
+}
+
+.home img {
+    animation: fadeInLeft 1s forwards;
+}
+
+#marshchoco {
+    opacity: 0;
+    margin: 5% 0;
+    padding: 5%;
+    text-align: left;
+    float: right;
+    border: 2px solid var(--contrast-color);
+    font-size: 50px;
+    animation: fadeInRight 0.7s forwards;
+    animation-delay: 0.7s;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+h1 span{
+    padding-left: 10px;
+}
+
+#name {
+    padding: 0 10px;
+    color: var(--thirtiary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#name:hover {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        background-color: var(--primary-color);
+        border-radius: 0;
+    }
+    100%{
+        background-color: var(--contrast-color);
+        border-radius: 50px;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=- My balls -=-=-=-=-=-=-=-=-=-=-=- */
+@keyframes dropFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes longerCircle{
+    0%{
+        width: 25px;
+        border-radius: 50%;
+    }
+    100%{
+        width: 50px;
+        border-radius: 25px;
+    }
+}
+
+.balls button {
+    float: right;
+    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+}
+
+.balls button:hover{
+    animation: longerCircle 0.5s forwards;
+}
+
+#ball1 {
+    background-color: var(--thirtiary-color);
+    animation: dropFromTop 1.0s forwards 1 1.75s;
+}
+
+#ball2 {
+    background-color: var(--secondary-color);
+    animation: dropFromTop 1.0s forwards 1 1.50s;
+}
+
+#ball3 {
+    background-color: var(--contrast-color);
+    animation: dropFromTop 1.0s forwards 1 1.25s;
+}

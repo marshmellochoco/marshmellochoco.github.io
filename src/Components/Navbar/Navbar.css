@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #0a0c36;
+    --secondary-color: #9496c5;
+    --thirtiary-color: #db97ea;
+    --contrast-color: #d7d8f4;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.navbar li{
+    text-align: center;
+    float: right;
+    list-style-type: none;
+    margin-left: 7em;
+    display: inline;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.navbar #home{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0;
+    float: left;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--contrast-color);
+}
