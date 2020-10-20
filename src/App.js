@@ -29,8 +29,5 @@ function App() {
 
 // TODO: add a component (PageNotFound) for 404 pages in hash routes
 // TODO: Load assets before starting the website
-// TODO: Add page transitions animation (out only)
-// TODO: Replace animations from CSS to FramerMotion
-// IMPORTANT: Fix the structure refering to the Framer-Motion-Demo project
 
 export default App;

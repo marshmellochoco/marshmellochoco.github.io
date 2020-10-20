@@ -1,5 +1,8 @@
+// Dependancy Import
 import React from 'react';
 import { motion } from 'framer-motion';
+
+// Component Import
 import './About.css';
 
 const containerAnim = {

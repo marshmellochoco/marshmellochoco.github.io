@@ -1,5 +1,8 @@
+// Dependancy Import
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+// Component Import
 import './Navbar.css';
 import icon from '../marshmallow_trans.png';
 
