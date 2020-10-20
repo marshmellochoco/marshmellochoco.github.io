@@ -11,10 +11,6 @@
     padding: 15% 0;
 }
 
-.home img {
-    animation: fadeInLeft 1s forwards;
-}
-
 #marshchoco {
     opacity: 0;
     margin: 5% 0;
@@ -23,7 +19,6 @@
     float: right;
     border: 2px solid var(--contrast-color);
     font-size: 50px;
-    animation: fadeInRight 0.7s forwards;
     animation-delay: 0.8s;
 }
 
@@ -55,30 +50,6 @@ h1 span{
     100%{
         background-color: var(--contrast-color);
         border-radius: 50px;
-    }
-}
-
-@keyframes fadeInLeft {
-    0% {
-        transform: translateX(-10%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInRight {
-    0% {
-        transform: translateX(10%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
     }
 }
 

@@ -1,28 +1,17 @@
-// Component Import
+//Depandancy Import
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-// Pages Import
-import Home from './Pages/Home';
-import About from './Pages/About';
-import PageNotFound from './Pages/PageNotFound';
+//Component Import
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Navbar />
-      <Switch>
-        <Router exact path="/"><Home /></Router>
-        <Router exact path="/about"><About /></Router>
-        <Router path="*"><PageNotFound /></Router>
-      </Switch>
+      <App />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// TODO: add a component (PageNotFound) for 404 pages in hash routes
-// TODO: Load assets before starting the website
