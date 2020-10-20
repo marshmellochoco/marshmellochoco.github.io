@@ -25,3 +25,4 @@ ReactDOM.render(
 );
 
 // TODO: add a component (PageNotFound) for 404 pages in hash routes
+// TODO: Load assets before starting the website

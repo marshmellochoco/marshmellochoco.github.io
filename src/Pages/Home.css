@@ -24,7 +24,7 @@
     border: 2px solid var(--contrast-color);
     font-size: 50px;
     animation: fadeInRight 0.7s forwards;
-    animation-delay: 0.7s;
+    animation-delay: 0.8s;
 }
 
 h1 {
@@ -95,17 +95,6 @@ h1 span{
     }
 }
 
-@keyframes longerCircle{
-    0%{
-        width: 25px;
-        border-radius: 50%;
-    }
-    100%{
-        width: 50px;
-        border-radius: 25px;
-    }
-}
-
 .balls button {
     float: right;
     margin: 0 10px;
@@ -116,21 +105,17 @@ h1 span{
     opacity: 0;
 }
 
-.balls button:hover{
-    animation: longerCircle 0.5s forwards;
-}
-
 #ball1 {
     background-color: var(--thirtiary-color);
-    animation: dropFromTop 1.0s forwards 1 1.75s;
+    animation: dropFromTop 1.0s forwards 1 1.85s;
 }
 
 #ball2 {
     background-color: var(--secondary-color);
-    animation: dropFromTop 1.0s forwards 1 1.50s;
+    animation: dropFromTop 1.0s forwards 1 1.60s;
 }
 
 #ball3 {
     background-color: var(--contrast-color);
-    animation: dropFromTop 1.0s forwards 1 1.25s;
+    animation: dropFromTop 1.0s forwards 1 1.35s;
 }
