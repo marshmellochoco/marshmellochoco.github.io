@@ -29,5 +29,7 @@ function App() {
 
 // TODO: add a component (PageNotFound) for 404 pages in hash routes
 // TODO: Load assets before starting the website
+// TODO: Clear out white spots for both icons
+// TODO: Add background for icon image
 
 export default App;

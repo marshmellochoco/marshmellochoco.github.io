@@ -17,7 +17,7 @@ const container = {
     },
     exit: {
       opacity: 0,
-      x: "-10vw",
+      y: "-5vh",
       transition: {
         ease: 'easeInOut',
       }
