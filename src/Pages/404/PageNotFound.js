@@ -1,6 +1,10 @@
 // Dependancy Import
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+// Component Import
+import './PageNotFound.css';
 
 const container = {
     hidden: {
@@ -34,7 +38,7 @@ const PageNotFound = () => {
         >
             <h1>Error 404</h1>
             <h2>This page does not exist.</h2>
-            <a href="/#">Click here to go back to the homepage</a>
+            <Link to="/">Click here to go back to the homepage</Link>
         </motion.div>
     )
 }

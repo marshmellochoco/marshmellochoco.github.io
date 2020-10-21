@@ -5,9 +5,9 @@ import { AnimatePresence } from 'framer-motion';
 
 // Component Import
 import Navbar from './Components/Navbar/Navbar';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import PageNotFound from './Pages/PageNotFound';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import PageNotFound from './Pages/404/PageNotFound';
 
 function App() {
     const location = useLocation();

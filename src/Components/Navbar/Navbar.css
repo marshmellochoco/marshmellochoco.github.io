@@ -5,34 +5,30 @@
     --contrast-color: #d7d8f4;
 }
 
-.navbar{
+nav{
     width: 100%;
-    height: 100px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.navbar li{
-    text-align: center;
+nav li{
+    padding: 1rem 3rem;
+    font-size: 1.2em;
     float: right;
-    list-style-type: none;
-    margin-left: 7em;
-    display: inline;
-    padding: 40px;
-    padding-right: 0;
+    list-style: none;
 }
 
-.navbar #home{
-    width: 100px;
-    height: 100px;
+#home{
+    height: 100%;
     margin: 0px;
     padding: 0;
-    float: left;
+
 }
 
-.navbar a{
+nav a{
     text-decoration: none;
     color: var(--contrast-color);
 }
