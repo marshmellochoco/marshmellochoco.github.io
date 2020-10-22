@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.50e8abf3.chunk.css",
-    "main.js": "/static/js/main.0305cd04.chunk.js",
-    "main.js.map": "/static/js/main.0305cd04.chunk.js.map",
+    "main.css": "/static/css/main.cd6d3303.chunk.css",
+    "main.js": "/static/js/main.10811eef.chunk.js",
+    "main.js.map": "/static/js/main.10811eef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c544f286.js",
     "runtime-main.js.map": "/static/js/runtime-main.c544f286.js.map",
     "static/js/2.89fa6729.chunk.js": "/static/js/2.89fa6729.chunk.js",
     "static/js/2.89fa6729.chunk.js.map": "/static/js/2.89fa6729.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7f00b949d02149accacada07aed85f57.js": "/precache-manifest.7f00b949d02149accacada07aed85f57.js",
+    "precache-manifest.8f1e98d5d492c7bc4f924978dd12deb7.js": "/precache-manifest.8f1e98d5d492c7bc4f924978dd12deb7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.50e8abf3.chunk.css.map": "/static/css/main.50e8abf3.chunk.css.map",
+    "static/css/main.cd6d3303.chunk.css.map": "/static/css/main.cd6d3303.chunk.css.map",
     "static/js/2.89fa6729.chunk.js.LICENSE.txt": "/static/js/2.89fa6729.chunk.js.LICENSE.txt",
     "static/media/FrightNightTitle.png": "/static/media/FrightNightTitle.a24263d4.png",
     "static/media/marshmallow_shadow.png": "/static/media/marshmallow_shadow.a45d8563.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.c544f286.js",
     "static/js/2.89fa6729.chunk.js",
-    "static/css/main.50e8abf3.chunk.css",
-    "static/js/main.0305cd04.chunk.js"
+    "static/css/main.cd6d3303.chunk.css",
+    "static/js/main.10811eef.chunk.js"
   ]
 }
