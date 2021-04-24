@@ -1,11 +1,11 @@
-:root{
+:root {
     --primary-color: #0a0c36;
     --secondary-color: #9496c5;
     --thirtiary-color: #db97ea;
     --contrast-color: #d7d8f4;
 }
 
-nav{
+nav {
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -14,21 +14,33 @@ nav{
     margin-bottom: 10px;
 }
 
-nav li{
+nav li {
     padding: 1rem 3rem;
     font-size: 1.2em;
     float: right;
     list-style: none;
 }
 
-#home{
+#home {
     height: 100%;
-    margin: 0px;
+    margin: 0;
     padding: 0;
 
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: var(--contrast-color);
+}
+
+@media only screen and (max-width: 860px) {
+    nav li {
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    nav li {
+        padding: 1rem 0.8rem;
+    }
 }
