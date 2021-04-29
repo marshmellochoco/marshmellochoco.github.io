@@ -6,8 +6,10 @@
 }
 
 .about {
+    padding: 12vh 20%;
     margin: auto;
-    width: 100%;
+    width: 60%;
+    height: 76vh;
 }
 
 h1 {

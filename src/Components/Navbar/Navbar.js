@@ -1,25 +1,26 @@
 // Dependancy Import
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
 
 // Component Import
-import './Navbar.css';
-import icon from '../../Assets/Images/marshmallow_trans.png';
+import "./Navbar.css";
+import icon from "../../Assets/Images/marshmallow_trans.png";
 
 function Navbar() {
     return (
-        <nav>
-            <Link to="/"><img src={icon} alt="A marshmello" width="100px" id="home"/></Link>
+        <nav id="topSection">
+            <a href="#topSection">
+                <img src={icon} alt="A marshmello" width="100px" id="home" />
+            </a>
             <ul>
                 <li>
-                    <Link to="/about">about</Link>
+                    <a href="#aboutSection">about</a>
                 </li>
                 <li>
-                    <Link to="/work">work</Link>
+                    <a href="#workSection">work</a>
                 </li>
             </ul>
         </nav>
-    )
+    );
 }
 
 export default Navbar;

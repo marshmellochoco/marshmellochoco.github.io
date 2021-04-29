@@ -1,12 +1,42 @@
+:root {
+    --primary-color: #0a0c36;
+    --secondary-color: #9496c5;
+    --thirtiary-color: #db97ea;
+    --contrast-color: #d7d8f4;
+}
+
 .cards-container{
-    width: 100%;
-    height: 30rem;
+    width: 98%;
+    padding: 1% 2%;
+    min-height: 30rem;
     background-color: #2a2c56;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+.cards-container .work{
+    width: 97%;
+    margin: 2% 0;
+}
+
+.work h2:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.cards-container .image-list{
+    height: 31rem;
+    background-color: var(--primary-color);
 }
 
 .cards-container img{
-    width: 50rem;
-    margin: auto auto;
+    height: 30rem;
+    margin-right: 2%;
+}
+
+.cards-container .image-list{
+    display: flex;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    height: 10px;
 }
