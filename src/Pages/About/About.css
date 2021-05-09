@@ -9,7 +9,7 @@
     padding: 12vh 20%;
     margin: auto;
     width: 60%;
-    height: 76vh;
+    min-height: 76vh;
 }
 
 h1 {
@@ -74,10 +74,6 @@ h1 {
 
 /* ---------- Media Query ---------- */
 @media only screen and (max-width: 860px) {
-    .about {
-        width: 100%;
-    }
-
     .aboutContainer {
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
