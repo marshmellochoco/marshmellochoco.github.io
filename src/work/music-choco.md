@@ -18,3 +18,4 @@ music-choco provides features such as
 -   and... let me think...
 
 by the way here are some screenshots.
+jk there are no screenshots.

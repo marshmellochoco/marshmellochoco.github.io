@@ -11,6 +11,7 @@ const Work = styled((props) => <Link {...props} />)`
     color: #232129;
     padding: 20px;
     margin: 16px 0;
+    box-shadow: 0 1px 2px 0 #c5c5c5;
     &:hover {
         box-shadow: 0 2px 4px 0 #c5c5c5;
     }

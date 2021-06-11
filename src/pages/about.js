@@ -7,11 +7,31 @@ import twitterIcon from "../images/twitter.svg";
 import mailIcon from "../images/email.svg";
 import { Link } from "gatsby";
 
-const Marshmello = styled.img`
-    max-width: 512px;
-    margin: auto;
+const About = styled.div`
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     @media (max-width: 860px) {
-        width: 100%;
+        display: block;
+    }
+`;
+
+const Marshmello = styled.div`
+    text-align: center;
+`;
+
+const MarshmelloImage = styled.img`
+    max-width: 80%;
+`;
+
+const Description = styled.section`
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 860px) {
+        margin: auto;
+        width: 80%;
     }
 `;
 
@@ -20,14 +40,16 @@ const ButtonList = styled.div`
     justify-content: space-evenly;
 `;
 
-const Description = styled.section``;
-
 const IconButton = styled((props) => <Link {...props} />)`
     width: 160px;
     color: #232129;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    box-shadow: 0 1px 2px 0 #c5c5c5;
+    &:hover {
+        box-shadow: 0 2px 4px 0 #c5c5c5;
+    }
 `;
 
 const Icon = styled.img`
@@ -39,30 +61,34 @@ const AboutPage = () => {
     return (
         <Layout>
             <h1>about</h1>
-            <Marshmello src={marshmallows} />
-            <caption>illust: Amane</caption>
-            <Description>
-                <p>
-                    Hey! I'm Ng Jing Kai (aka marshmellochoco), a student from
-                    Malaysia who is currently pursuing a Software Engineering
-                    degree. I am passionate toward Web Development and Mobile
-                    Application Development.
-                </p>
-                <ButtonList>
-                    <IconButton to="https://github.com/marshmellochoco">
-                        <Icon src={githubIcon} />
-                        <p>Github</p>
-                    </IconButton>
-                    <IconButton to="https://twitter.com/marshchoco01">
-                        <Icon src={twitterIcon} />
-                        <p>Twitter</p>
-                    </IconButton>
-                    <IconButton to="https://twitter.com/marshchoco01">
-                        <Icon src={mailIcon} />
-                        <p>Mail</p>
-                    </IconButton>
-                </ButtonList>
-            </Description>
+            <About>
+                <Marshmello>
+                    <MarshmelloImage src={marshmallows} />
+                    <p>illust: Amane</p>
+                </Marshmello>
+                <Description>
+                    <p>
+                        Hey! I'm Ng Jing Kai (aka marshmellochoco), a student
+                        from Malaysia who is currently pursuing a Software
+                        Engineering degree. I am passionate toward Web
+                        Development and Mobile Application Development.
+                    </p>
+                    <ButtonList>
+                        <IconButton to="https://github.com/marshmellochoco">
+                            <Icon src={githubIcon} />
+                            <p>Github</p>
+                        </IconButton>
+                        <IconButton to="https://twitter.com/marshchoco01">
+                            <Icon src={twitterIcon} />
+                            <p>Twitter</p>
+                        </IconButton>
+                        <IconButton to="https://twitter.com/marshchoco01">
+                            <Icon src={mailIcon} />
+                            <p>Mail</p>
+                        </IconButton>
+                    </ButtonList>
+                </Description>
+            </About>
         </Layout>
     );
 };
