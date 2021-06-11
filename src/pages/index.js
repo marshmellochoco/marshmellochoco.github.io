@@ -38,7 +38,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <Home>
-                <BigLogo src={bigLogo} />
+                <BigLogo src={bigLogo} alt={"big logo"} />
                 <Header>
                     Hi, I'm <br />
                     <code>marshmellochoco</code>
