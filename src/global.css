@@ -1,0 +1,19 @@
+html {
+    overflow-y: overlay;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a3a1a9;
+}
