@@ -10,7 +10,9 @@ import { Link } from "gatsby";
 const About = styled.div`
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    line-height: 1.6em;
+    text-align: justify;
     @media (max-width: 860px) {
         display: block;
     }
@@ -18,20 +20,25 @@ const About = styled.div`
 
 const Marshmello = styled.div`
     text-align: center;
+    width: fit-content;
+    margin-left: 36px;
+    @media (max-width: 860px) {
+        margin: 0;
+    }
 `;
 
 const MarshmelloImage = styled.img`
-    max-width: 80%;
+    border: 1px solid grey;
+    width: 100%;
 `;
 
 const Description = styled.section`
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     @media (max-width: 860px) {
-        margin: auto;
-        width: 80%;
+        width: 100%;
     }
 `;
 
@@ -64,7 +71,6 @@ const AboutPage = () => {
             <About>
                 <Marshmello>
                     <MarshmelloImage src={marshmallows} />
-                    <p>illust: Amane</p>
                 </Marshmello>
                 <Description>
                     <p>

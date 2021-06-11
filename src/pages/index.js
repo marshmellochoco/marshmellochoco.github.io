@@ -15,9 +15,13 @@ const Home = styled.div`
     }
 `;
 
+const LogoContainer = styled.div`
+    width: fit-content;
+`;
+
 const BigLogo = styled.img`
-    margin: auto;
-    height: 30em;
+    width: 80%;
+    max-height: 100%;
     @media (max-width: 860px) {
         height: auto;
         width: 100%;
@@ -25,11 +29,9 @@ const BigLogo = styled.img`
 `;
 
 const Header = styled.h1`
-    margin: auto;
     padding: 32px 64px;
     width: fit-content;
     height: fit-content;
-    margin: 64px auto;
     border: 2px solid black;
 `;
 
@@ -38,7 +40,9 @@ const IndexPage = () => {
     return (
         <Layout>
             <Home>
-                <BigLogo src={bigLogo} alt={"big logo"} />
+                <LogoContainer>
+                    <BigLogo src={bigLogo} alt={"big logo"} />
+                </LogoContainer>
                 <Header>
                     Hi, I'm <br />
                     <code>marshmellochoco</code>

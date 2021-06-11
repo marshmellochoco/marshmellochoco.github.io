@@ -11,9 +11,12 @@ const App = styled.main`
 `;
 
 const Content = styled.section`
-    padding: 16px 96px;
+    padding: 16px 20%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1024px) {
+        padding: 16px 20%;
+    }
     @media (max-width: 425px) {
         padding: 32px;
     }

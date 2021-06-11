@@ -5,10 +5,13 @@ import logo from "../../images/marshmallow/marshmallow_trans.png";
 
 const Nav = styled.nav`
     width: auto;
-    padding: 32px 96px;
+    padding: 32px 20%;
     display: flex;
     justify-content: space-between;
     background: transparent;
+    @media (max-width: 1024px) {
+        padding: 32px 20%;
+    }
     @media (max-width: 425px) {
         padding: 32px;
     }
