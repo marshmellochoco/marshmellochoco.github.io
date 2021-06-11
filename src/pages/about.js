@@ -19,7 +19,6 @@ const About = styled.div`
 `;
 
 const Marshmello = styled.div`
-    text-align: center;
     width: fit-content;
     margin-left: 36px;
     @media (max-width: 860px) {

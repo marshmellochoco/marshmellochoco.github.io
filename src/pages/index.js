@@ -5,27 +5,25 @@ import Layout from "./components/Layout";
 
 // styles
 const Home = styled.div`
-    padding: 64px 0;
-    height: 100%;
+    padding: 10% 0;
+    height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     @media (max-width: 860px) {
         flex-direction: column;
     }
 `;
 
-const LogoContainer = styled.div`
-    width: fit-content;
-`;
-
 const BigLogo = styled.img`
-    width: 80%;
-    max-height: 100%;
+    width: 100%;
+    max-width: 400px;
+    /* max-height: 100%;
     @media (max-width: 860px) {
         height: auto;
         width: 100%;
-    }
+    } */
 `;
 
 const Header = styled.h1`
@@ -33,6 +31,9 @@ const Header = styled.h1`
     width: fit-content;
     height: fit-content;
     border: 2px solid black;
+    @media (max-width: 860px) {
+        padding: 8% 16%;
+    }
 `;
 
 // markup
@@ -40,9 +41,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <Home>
-                <LogoContainer>
-                    <BigLogo src={bigLogo} alt={"big logo"} />
-                </LogoContainer>
+                <BigLogo src={bigLogo} alt={"big logo"} />
                 <Header>
                     Hi, I'm <br />
                     <code>marshmellochoco</code>
