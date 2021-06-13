@@ -21,7 +21,6 @@ const WorkDetails = ({ data }) => {
             max-width: 100%;
         }
     `;
-    console.log(link);
 
     return (
         <Layout>
