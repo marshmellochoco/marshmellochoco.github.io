@@ -5,10 +5,24 @@ import Layout from "../pages/components/Layout";
 
 const WorkDetails = ({ data }) => {
     const { html } = data.markdownRemark;
-    const { stack, title, link } = data.markdownRemark.frontmatter;
+    const { stack, title, github, site } = data.markdownRemark.frontmatter;
 
     const Header = styled.header`
         margin: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    `;
+
+    const WorkLink = styled((props) => <Link {...props} />)`
+        text-decoration: none;
+        color: black;
+        margin: 16px;
+        padding: 8px 16px;
+        box-shadow: 0 1px 2px 0 #c5c5c5;
+        &:hover {
+            box-shadow: 0 2px 4px 0 #c5c5c5;
+        }
     `;
 
     const Title = styled.h1`
@@ -25,10 +39,23 @@ const WorkDetails = ({ data }) => {
     return (
         <Layout>
             <Header>
-                <Title>{title}</Title>
-                <subtitle>{stack}</subtitle>
+                <div>
+                    <Title>{title}</Title>
+                    <subtitle>{stack}</subtitle>
+                </div>
+                <div>
+                    {github ? (
+                        <WorkLink to={github}>Project repo</WorkLink>
+                    ) : (
+                        <></>
+                    )}
+                    {site ? (
+                        <WorkLink to={site}>Check me out!</WorkLink>
+                    ) : (
+                        <></>
+                    )}
+                </div>
             </Header>
-            {link ? <Link to={link}>link to the project.</Link> : <></>}
             <Detail dangerouslySetInnerHTML={{ __html: html }} />
         </Layout>
     );
@@ -43,7 +70,8 @@ export const query = graphql`
             frontmatter {
                 stack
                 title
-                link
+                github
+                site
             }
         }
     }

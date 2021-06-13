@@ -3,7 +3,8 @@ title: Fright Night
 slug: fright-night
 stack: Unity
 date: 2021-01-06
-link:
+github:
+site:
 ---
 
 A Unity game project that I have worked on from scratch during internship. It will (hopefully) have updates and become an actual game that is playable.
