@@ -1,7 +1,7 @@
 ---
 title: marshchoco.github.io
 slug: marshchoco.github.io
-stack: GatsbyJS and Emotions
+stack: Gatsby and Emotion
 date: 2021-06-01
 github: https://github.com/marshmellochoco/marshmellochoco.github.io
 site: https://marshmellochoco.github.io
