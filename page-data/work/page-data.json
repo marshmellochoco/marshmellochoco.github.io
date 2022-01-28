@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-work-js","path":"/work/","result":{"data":{"workQuery":{"nodes":[{"frontmatter":{"title":"doodly","slug":"doodly","stack":"Gatsby, Emotion and stripe"}},{"frontmatter":{"title":"marshchoco.github.io","slug":"marshchoco.github.io","stack":"Gatsby and Emotion"}},{"frontmatter":{"title":"music-choco","slug":"music-choco","stack":"ReactJS, NodeJS and MongoDB (MERN stack)"}},{"frontmatter":{"title":"Fright Night","slug":"fright-night","stack":"Unity"}}]}},"pageContext":{}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-work-js",
+    "path": "/work/",
+    "result": {"data":{"allContentfulWork":{"nodes":[{"id":"bd1b8d2e-b360-544f-af34-f2f02a78c27c","title":"doodly","slug":"doodly","stack":["Gatsby","Emotion","Stripe"]},{"id":"d1533928-8b50-5b9a-b1ba-9c8a3d84105b","title":"marshchoco.github.io","slug":"marshchoco.github.io","stack":["Gatsby","Emotion"]},{"id":"94bcd584-9836-5282-b1ff-c25b6758d161","title":"music-choco","slug":"music-choco","stack":["ReactJS","NodeJS","MongoDB","ExpressJS"]},{"id":"bd1f8a71-fbab-5015-b54a-9d280999e5b4","title":"Fright Night","slug":"fright-night","stack":["Unity"]}]}},"pageContext":{}},
+    "staticQueryHashes": []}
