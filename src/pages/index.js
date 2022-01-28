@@ -11,19 +11,15 @@ const Home = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         flex-direction: column;
+        gap: 24px;
     }
 `;
 
 const BigLogo = styled.img`
     width: 100%;
     max-width: 400px;
-    /* max-height: 100%;
-    @media (max-width: 860px) {
-        height: auto;
-        width: 100%;
-    } */
 `;
 
 const Header = styled.h1`
@@ -31,8 +27,20 @@ const Header = styled.h1`
     width: fit-content;
     height: fit-content;
     border: 2px solid black;
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         padding: 8% 16%;
+    }
+`;
+
+const Hidden = styled.a`
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    color: white;
+    cursor: default;
+    text-decoration: none;
+    &:hover {
+        color: #ddd;
     }
 `;
 
@@ -47,6 +55,12 @@ const IndexPage = () => {
                     <code>marshmellochoco</code>
                 </Header>
             </Home>
+            <Hidden
+                href="https://marshmellochoco.github.io/my-watch-list/"
+                aria-hidden="true"
+            >
+                Whaaaat
+            </Hidden>
         </Layout>
     );
 };

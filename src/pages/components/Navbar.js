@@ -1,38 +1,33 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
-import logo from "../../images/marshmallow/marshmallow_trans.png";
 
 const Nav = styled.nav`
-    width: auto;
-    padding: 32px 20%;
-    display: flex;
-    justify-content: space-between;
+    margin: 32px auto;
     background: transparent;
-    @media (max-width: 1024px) {
-        padding: 32px 20%;
+    width: var(--width-xl);
+    @media (max-width: 1280px) {
+        width: var(--width-lg);
+    }
+    @media (max-width: 768px) {
+        width: auto;
+        margin: 32px 64px;
     }
     @media (max-width: 425px) {
-        padding: 32px;
+        margin: 32px 16px;
     }
-`;
-
-const NavIcon = styled.img`
-    width: 64px;
-    height: 64px;
 `;
 
 const NavItems = styled.div`
-    display: flex;
-    height: 64px;
-    width: 288px;
-    align-content: center;
-    justify-content: space-between;
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    text-align: center;
 `;
 
 const NavLink = styled((props) => <Link {...props} />)`
-    max-width: 96px;
-    margin: auto 0 auto auto;
+    max-width: 120px;
     color: #232129;
     text-decoration: none;
     &:hover {
@@ -43,7 +38,6 @@ const NavLink = styled((props) => <Link {...props} />)`
 const Navbar = () => {
     return (
         <Nav>
-            <NavIcon src={logo} alt="something" />
             <NavItems>
                 <NavLink to="/">home</NavLink>
                 <NavLink to="/work">work</NavLink>

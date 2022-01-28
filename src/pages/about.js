@@ -13,7 +13,7 @@ const About = styled.div`
     justify-content: space-between;
     line-height: 1.6em;
     text-align: justify;
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         display: block;
     }
 `;
@@ -21,8 +21,8 @@ const About = styled.div`
 const Marshmello = styled.div`
     width: fit-content;
     margin-left: 36px;
-    @media (max-width: 860px) {
-        margin: 0;
+    @media (max-width: 768px) {
+        margin: auto;
     }
 `;
 
@@ -36,14 +36,15 @@ const Description = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         width: 100%;
     }
 `;
 
 const ButtonList = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 16px;
 `;
 
 const IconButton = styled((props) => <Link {...props} />)`
@@ -52,9 +53,17 @@ const IconButton = styled((props) => <Link {...props} />)`
     text-decoration: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: 0 1px 2px 0 #c5c5c5;
+    padding: 4px 0;
     &:hover {
         box-shadow: 0 2px 4px 0 #c5c5c5;
+    }
+`;
+
+const IconText = styled.div`
+    @media (max-width: 768px) {
+        display: none;
     }
 `;
 
@@ -81,15 +90,15 @@ const AboutPage = () => {
                     <ButtonList>
                         <IconButton to="https://github.com/marshmellochoco">
                             <Icon src={githubIcon} />
-                            <p>Github</p>
+                            <IconText>Github</IconText>
                         </IconButton>
                         <IconButton to="https://twitter.com/marshchoco01">
                             <Icon src={twitterIcon} />
-                            <p>Twitter</p>
+                            <IconText>Twitter</IconText>
                         </IconButton>
                         <IconButton to="https://twitter.com/marshchoco01">
                             <Icon src={mailIcon} />
-                            <p>Mail</p>
+                            <IconText>Mail</IconText>
                         </IconButton>
                     </ButtonList>
                 </Description>

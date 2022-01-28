@@ -3,22 +3,23 @@ import styled from "@emotion/styled";
 import Navbar from "./Navbar";
 
 const App = styled.main`
-    width: 100vw;
-    height: 100vh;
     color: #232129;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `;
 
 const Content = styled.section`
-    padding: 16px 20%;
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 1024px) {
-        padding: 16px 20%;
+    margin: 0 auto;
+    width: var(--width-xl);
+    @media (max-width: 1280px) {
+        width: var(--width-lg);
+    }
+    @media (max-width: 768px) {
+        width: auto;
+        margin: 0 64px;
     }
     @media (max-width: 425px) {
-        padding: 32px;
+        margin: 0 16px;
     }
 `;
 

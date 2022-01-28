@@ -2,22 +2,20 @@ const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
     const { data } = await graphql(`
-        query Works {
-            allMarkdownRemark {
+        query {
+            allContentfulWork(sort: { fields: date, order: DESC }) {
                 nodes {
-                    frontmatter {
-                        slug
-                    }
+                    slug
                 }
             }
         }
     `);
 
-    data.allMarkdownRemark.nodes.forEach((node) => {
+    data.allContentfulWork.nodes.forEach((node) => {
         actions.createPage({
-            path: "/work/" + node.frontmatter.slug,
+            path: "/work/" + node.slug,
             component: path.resolve("./src/templates/work-details.js"),
-            context: { slug: node.frontmatter.slug },
+            context: { slug: node.slug },
         });
     });
 };
