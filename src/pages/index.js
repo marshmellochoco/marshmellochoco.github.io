@@ -1,7 +1,8 @@
-import styled from "@emotion/styled";
-import React from "react";
-import bigLogo from "../images/marshmallow/marshmallow_shadow.png";
-import Layout from "./components/Layout";
+import styled from '@emotion/styled';
+import { Link } from 'gatsby';
+import React from 'react';
+import bigLogo from '../images/marshmallow/marshmallow_shadow.png';
+import Layout from './components/Layout';
 
 // styles
 const Home = styled.div`
@@ -18,8 +19,12 @@ const Home = styled.div`
 `;
 
 const BigLogo = styled.img`
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    height: 456px;
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 342px;
+    }
 `;
 
 const Header = styled.h1`
@@ -32,7 +37,7 @@ const Header = styled.h1`
     }
 `;
 
-const Hidden = styled.a`
+const Hidden = styled((props) => <Link {...props} />)`
     position: fixed;
     bottom: 8px;
     right: 8px;
@@ -49,16 +54,13 @@ const IndexPage = () => {
     return (
         <Layout>
             <Home>
-                <BigLogo src={bigLogo} alt={"big logo"} />
+                <BigLogo src={bigLogo} alt={'big logo'} />
                 <Header>
                     Hi, I'm <br />
                     <code>marshmellochoco</code>
                 </Header>
             </Home>
-            <Hidden
-                href="https://marshmellochoco.github.io/my-watch-list/"
-                aria-hidden="true"
-            >
+            <Hidden to='my-watch-list' aria-hidden='true'>
                 Whaaaat
             </Hidden>
         </Layout>

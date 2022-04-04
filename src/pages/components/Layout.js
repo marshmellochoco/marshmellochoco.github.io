@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "@emotion/styled";
-import Navbar from "./Navbar";
+import React from 'react';
+import styled from '@emotion/styled';
+import Navbar from './Navbar';
 
 const App = styled.main`
+    padding-bottom: 2em;
     color: #232129;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const Content = styled.section`

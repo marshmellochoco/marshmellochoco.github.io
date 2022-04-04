@@ -1,9 +1,9 @@
-import styled from "@emotion/styled";
-import { graphql } from "gatsby";
-import { renderRichText } from "gatsby-source-contentful/rich-text";
-import React from "react";
-import Layout from "../pages/components/Layout";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import styled from '@emotion/styled';
+import { graphql } from 'gatsby';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import React from 'react';
+import Layout from '../pages/components/Layout';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const WorkDetails = ({ data }) => {
     const { slug, title, stack, github, website, description } =
@@ -64,16 +64,16 @@ const WorkDetails = ({ data }) => {
             <Header>
                 <div>
                     <Title>{title}</Title>
-                    <Stack>{stack.join(", ")}</Stack>
+                    <Stack>{stack.join(', ')}</Stack>
                 </div>
                 <ButtonGroup>
                     {github ? (
-                        <WorkLink href={github} target="__blank">
+                        <WorkLink href={github} target='__blank'>
                             Project repo
                         </WorkLink>
                     ) : null}
                     {website ? (
-                        <WorkLink href={website} target="__blank">
+                        <WorkLink href={website} target='__blank'>
                             Check me out!
                         </WorkLink>
                     ) : null}
